@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Muhammad Norfikri">
+	
+	<title>Blog post | Muhammad Norfikri</title>
+
+	<link rel="shortcut icon" href="assets/images/MN logo (2).png">
+	
+	<!-- Bootstrap -->
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icon font -->
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+</head>
+<body>
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="1">
+		<h1 id="logo" class="text-center">
+			<img class="img-circle" src="assets/images/WhatsApp Image 2022-02-28 at 21.19.22.jpeg" alt="">
+			<span class="title">Muhammad Norfikri's Blog</span>
+			<span class="tagline">A creative man is motivated by the desire to achieve, not by the desire to beat others.</span>
+		</h1>
+	</div>
+
+	<nav class="navbar navbar-default navbar-sticky">
+		<div class="container-fluid">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+			
+			<div class="navbar-collapse collapse">
+				
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href=""></a></li>
+							<li><a href=""></a></li>
+							<li><a href="single.html">Blog Post</a></li>
+						</ul>
+					</li>
+					<li class="active"><a href="blog.html">Blog</a></li>
+				</ul>
+			
+			</div><!--/.nav-collapse -->			
+		</div>	
+	</nav>
+</header>
+
+<main id="main">
+
+	<div class="container">
+		
+		<div class="row topspace">
+			<div class="col-sm-8 col-sm-offset-2">
+															
+ 				<article class="post">
+					<header class="entry-header">
+ 						<div class="entry-meta"> 
+ 							<span class="posted-on"><time class="entry-date published" date="2022-05-13">May 13, 2022</time></span>			
+ 						</div> 
+ 						<h1 class="entry-title"><a href="single.html" rel="bookmark">Blender 2D Animation in a 3D Environment</a></h1>
+					</header> 
+					<div class="entry-content"> 
+						<p><img alt="" src="assets/images/Screenshot 2022-05-13 104238.png"></p>
+						<p>
+							Have you ever heard of the software Blender?
+							As for all of the artists out there, I'm pretty sure you know about Blender. As for you who don't, I have some news for you, Blender now supports 2D Animation in a 3D Environment! You should definitely check this amazing feature out.
+						</p>
+						<h1>
+							<strong>Animating With Grease Pencil</strong>
+						</h1>
+						<ul>
+						<p>
+							In Blender, Grease Pencil objects can be animated in many ways:
+							<br/>
+
+								<strong>Moving as a whole object</strong>
+									<li>Changing their position, orientation or size in time;</li>
+									<br/>
+								<strong>Drawing frame by frame</strong>
+									<li>Drawing one frame at a time (traditional animation)</li>
+									<br/>
+								<strong>Deforming them</strong>
+									<li>Animating their points;</li>
+									<br/>
+								<strong>Inherited Animation</strong>
+									<li>Causing the object to move based on the movement of another object (e.g. its parent, hook, armature, etc.). Useful for cut-out animation for example.</li>
+						</p>
+					</ul>
+						<h1><strong>2D Traditional Animation</strong></h1>
+
+						<p>
+							<strong>Keyframes</strong>
+								<br/>
+							<br/>
+								Traditional animation in Grease Pencil can be achieved with the use of keyframes that hold the strokes information at a particular frame or frame range.
+								<br/>
+							<br/>
+								With Auto keyframe activated, every time you create a stroke in Grease Pencil object Draw Mode a new keyframe is added at the current frame on the active channel. With Auto keyframe deactivated, you will have to manually add a new keyframe or your new strokes will be added on the active keyframe.
+								<br/>
+							<br/>
+							<strong>Onion Skinning</strong>
+								<br/>
+							<br/>
+								One key element in traditional animation is the use of onion skinning. Grease Pencil offers a lot of flexibility and options for this tool. 
+
+
+						</p>
+						
+						<blockquote>
+							Onion skinning is a 2D computer graphics term for a technique used in creating animated cartoons and editing movies to see several frames at once. This way, the animator or editor can make decisions on how to create or change an image based on the previous image in the sequence. In traditional cartoon animation, the individual frames of a movie were initially drawn on thin onionskin paper over a light source. The animators would put the previous and next drawings exactly beneath the working drawing, so that they could draw the 'in between' to give a smooth motion. In computer software, this effect is achieved by making frames translucent and projecting them on top of each other. This effect can also be used to create motion blurs, as seen in The Matrix when characters dodge bullets.
+						</blockquote>
+
+						<h1><strong>Animation Options</strong></h1>
+
+						<p>
+						<ul>
+							<strong>Draw Mode</strong>
+								<br/>
+							<br/>
+								In Draw Mode there are three related options to the animation workflow that you can use.
+								<br/>
+							<br/>
+							<strong>Add Weight Data</strong>
+								<br/>
+							<br/>
+								<li>When enabled, new strokes weight data is added according to the current vertex group and weights. If there is no vertex group selected, no weight data is added.</li>
+								
+							<br/>
+								<li>This is useful for example in cut-out animation for adding new drawing on the same vertex group without the need to creating it afterwards.</li>
+								<br/>
+							<br/>
+								<strong>Additive Drawing</strong>
+								<br/>
+							<br/>
+								<li>When creating new frames, the strokes from the previous/active frame are include as a basis for the new one.</li>
+								<br/>
+							<br/>
+								<strong>Multiframe</strong>
+								<br/>
+							<br/>
+								<li>If you need to add new strokes to your animation on several frames you can use multiframe drawing.</li>
+								
+							<br/>
+								<li>You can activate multiframe drawing with the Multiframe button next to the modes selector (faded lines icon)</li>
+							
+						</ul>
+						</p>
+						
+						
+					</div> 
+				</article><!-- #post-## -->
+
+			</div> 
+		</div> <!-- /row post  -->
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+
+				<div id="comments">	
+					<h3 class="comments-title">3 Comments</h3>
+					<a href="#comment-form" class="leave-comment">Leave a Comment</a>
+					
+					<ol class="comments-list">
+						<li class="comment">
+							<div>
+								<img src="assets/images/avatar_man.png" alt="Avatar" class="avatar">
+												
+								<div class="comment-meta">
+									<span class="author"><a href="#">Mohd Hakim</a></span>
+									<span class="date"><a href="#">May 13, 2022 at 4:55 pm</a></span>
+									<span class="reply"><a href="#">Reply</a></span>
+								</div>
+
+								<div class="comment-body">
+									This is a very descriptive article.
+								</div>
+							</div>
+
+							<ul class="children">
+								<li class="comment">
+									<div>
+										<img src="assets/images/avatar_man.png" alt="Avatar" class="avatar">
+																
+										<div class="comment-meta">
+											<span class="author"><a href="#">Mohd Hakim</a></span>
+											<span class="date"><a href="#">May 13, 2022 at 4:57 pm</a></span>
+											<span class="reply"><a href="#">Reply</a></span>
+										</div><!-- .comment-meta -->
+
+										<div class="comment-body">
+											There i was thinking that Blender is only for 3D Modeling.
+										</div><!-- .comment-body -->
+									</div>
+								</li>
+							</ul><!-- .children -->
+						</li>
+
+						<li class="comment">
+							<div>
+								<img src="assets/images/guy.jpg" alt="Avatar" class="avatar">
+								
+								<div class="comment-meta">
+									<span class="author"><a href="#">Edmund</a></span>
+									<span class="date"><a href="#">May 13, 2022 at 5:05 pm</a></span>
+									<span class="reply"><a href="#">Reply</a></span>
+								</div><!-- .comment-meta -->
+
+								<div class="comment-body">
+									This article is actually inspiring me to try the new feature.	
+								</div><!-- .comment-body -->
+							</div>
+						</li>
+					</ol>
+					
+					<div class="clearfix"></div>
+
+					<nav id="comment-nav-below" class="comment-navigation clearfix" role="navigation"><div class="nav-content">
+							<div class="nav-previous">&larr; Older Comments</div>
+							<div class="nav-next">Newer Comments &rarr;</div>
+					</div></nav><!-- #comment-nav-below -->
+
+
+					<div id="respond">
+						<h3 id="reply-title">Leave a Reply</h3>
+						<form action="" method="post" id="commentform" class="">
+							<div class="form-group">
+								<label for="inputName">Name</label>
+								<input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+							</div>
+							<div class="form-group">
+								<label for="inputEmail">Email address <i class="text-danger">*</i></label>
+								<input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
+							</div>
+							<div class="form-group">
+								<label for="inputWeb">Website</label>
+								<input type="nane" class="form-control" id="inputWeb" placeholder="http://">
+							</div>
+							<div class="form-group">
+								<label for="inputComment">Comment</label>
+								<textarea class="form-control" rows="6"></textarea>
+							</div>
+							<div class="row">
+								<div class="col-md-8">
+									<div class="checkbox">
+										<label> <input type="checkbox"> Subscribe to updates</label>
+									</div>
+								</div>
+								<div class="col-md-4 text-right">
+  									<button type="submit" class="btn btn-action">Submit</button>
+								</div>
+						</form>
+					</div> <!-- /respond -->
+				</div>
+			</div>
+		</div> <!-- /row comments -->
+		<div class="clearfix"></div>
+
+	</div>	<!-- /container -->
+
+</main>
+
+<footer id="footer" class="topspace">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Contact</h3>
+				<div class="widget-body">
+					<p>+60 16 4648570<br>
+						<a href="mailto:fikrinoor976@gmail.com">fikrinoor976@gmail.com</a><br>
+						<br>
+						43950, Sungai Pelek, Bagan Lalang, Sepang, Selangor
+					</p>	
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Follow me</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+						<a href="https://www.youtube.com/channel/UC8bf9deXOUyWN0BuDU-RNqw"><i class="fa fa-youtube fa-2"></i></a>
+						<a href="https://www.linkedin.com/in/muhammad-norfikri-mohd-noor-586844228/"><i class="fa fa-linkedin fa-2"></i></a>
+						<a href=""><i class="fa fa-github fa-2"></i></a>
+						<a href="https://www.instagram.com/nfikrimn/"><i class="fa fa-instagram fa-2"></i></a>
+					</p>
+				</div>
+			</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title"></h3>
+				<div class="widget-body">
+					<p></p>
+					<p></p>
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title"></h3>
+				<div class="widget-body">
+					<p>+60 16 4648570<br>
+						<a href="mailto:fikrinoor976@gmail.com">fikrinoor976@gmail.com</a><br>
+						<br>
+						43950, Sungai Pelek, Bagan Lalang, Sepang, Selangor
+					</p>	
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+<footer id="underfooter">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p>43950, Sungai Pelek, Bagan Lalang, Sepang, Selangor </p>
+				</div>
+			</div>
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p class="text-right">
+						Copyright &copy; 2022, Muhammad Norfikri<br> 
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>
